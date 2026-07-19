@@ -11,7 +11,9 @@
     "esm",
     "extractor"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "pattern-collector": "^1.2.6"
+  },
   "type": "module",
   "exports": {
     ".": "./index.js"

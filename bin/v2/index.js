@@ -1,13 +1,11 @@
+import getAllMatches from "pattern-collector";
 /**
  * Returns all raw import statements present in the file content.
  */
-const startFunc = ({ inFileContent, inSearchString }) => {
-    // const importRegex = /import\s+[\s\S]*?\s+from\s+['"][^'"]+['"]|import\s+['"][^'"]+['"]/g;
-    const matches = [];
-    let match;
-    while ((match = inSearchString.exec(inFileContent)) !== null) {
-        matches.push(match[0]);
-    }
+const searchString = /^[ \t]*app\.use\s*\(/gm
+
+const startFunc = ({ inFileContent }) => {
+    const matches = getAllMatches({ inFileContent, inSearchString: searchString });
     return matches;
 };
 

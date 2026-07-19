@@ -11,10 +11,7 @@ try {
     const fileContent = fs.readFileSync(appPath, 'utf8');
 
     console.log("=== getAllImports Test ===");
-    console.log(defaultFunc({
-        fileContent: fileContent,
-        searchString: /^[ \t]*app\.use\s*\(/gm
-    }));
+    console.log(defaultFunc({ fileContent: fileContent }));
 } catch (error) {
     console.error("Error running test:", error.message);
 }
