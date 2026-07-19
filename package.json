@@ -1,0 +1,33 @@
+{
+  "name": "pattern-collector-appjs-use",
+  "version": "1.2.6",
+  "description": "A high-performance pattern collector and ESM import statement analyzer.",
+  "keywords": [
+    "pattern",
+    "regex",
+    "parser",
+    "import",
+    "analyzer",
+    "esm",
+    "extractor"
+  ],
+  "dependencies": {},
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "bin/",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/keshavsoft/pattern-collector#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keshavsoft/pattern-collector-appjs-use"
+  },
+  "bugs": {
+    "url": "https://github.com/keshavsoft/pattern-collector-appjs-use/issues"
+  }
+}
