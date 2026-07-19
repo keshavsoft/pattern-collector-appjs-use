@@ -5,7 +5,11 @@ import getAllMatches from "pattern-collector";
 const searchString = /^[ \t]*app\.use\s*\(/gm
 
 const startFunc = ({ inFileContent }) => {
-    const matches = getAllMatches({ inFileContent, inSearchString: searchString });
+    const matches = getAllMatches({
+        fileContent: inFileContent,
+        searchString
+    });
+
     return matches;
 };
 
