@@ -4,6 +4,9 @@ on:
   repository_dispatch:
     types: [dependency-updated]
 
+permissions:
+  contents: write
+
 jobs:
   update-dependency:
     runs-on: ubuntu-latest
